@@ -1,4 +1,4 @@
-package Lerneinheiten.do1;
+package lerneinheiten.aufbauEinerJavaKlasse;
 
 public class HelloWorld {
     public static void main(String[] args) {
