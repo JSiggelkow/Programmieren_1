@@ -7,6 +7,9 @@ package lerneinheiten.datenObjekte;
  * @version 1.0
  */
 public class DataObjects {
+
+    //Deklaration  fixer Datenobjekte
+    final static double PI = 3.14159265359;
     public static void main(String[] args) {
 
         //Deklaration variabler Datenobjekte
@@ -26,5 +29,6 @@ public class DataObjects {
         char gender = 'M';
 
         System.out.println(i);
+        System.out.println(PI);
     }
 }
