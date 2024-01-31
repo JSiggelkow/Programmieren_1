@@ -35,5 +35,26 @@ public class Template {
         c++;
         c++;
         System.out.println(c);
+
+        // Teilen durch Null
+        b = 0;
+        try {
+            c = a / b;
+        } catch (ArithmeticException e) {
+            System.out.println("a/0 -> Exception -> / by 0 -> ArithmeticException");
+        }
+
+        try {
+            System.out.println("double a / b : " + (double) a / b);
+        } catch (Exception e) {
+            System.out.println("An error occurred lol");
+        }
+
+        try {
+            System.out.println(0/0.0);
+            System.out.println(0/-0.0);
+        } catch (Exception e) {
+            System.out.println("An error occurred lol");
+        }
     }
 }
