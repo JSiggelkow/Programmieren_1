@@ -12,7 +12,7 @@ public class ConsoleInputs {
     public static void main(String[] args) {
 
         // Scanner initialisieren
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in).useDelimiter("\\n");
 
         // Werte von der Konsole auslesen
         System.out.print("Bitte eine Zahl eingeben: ");
@@ -26,5 +26,9 @@ public class ConsoleInputs {
         System.out.print("Bitte einen boolschen Wahrheitswert eingeben: ");
         boolean boolean1 = sc.nextBoolean();
         System.out.println("boolean1: " + boolean1);
+
+        System.out.println("Bitte mehrere Wörter eingeben");
+        String inputSentence = sc.next();
+        System.out.println("Output: " + inputSentence);
     }
 }
