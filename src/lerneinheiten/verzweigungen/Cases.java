@@ -3,12 +3,16 @@ package lerneinheiten.verzweigungen;
 import java.util.Scanner;
 
 /**
- * Zeigt verschieden Möglichkeiten Verzweigungen vorzunehmen
+ * Zeigt verschiedene Möglichkeiten Verzweigungen vorzunehmen
  *
  * @author Jonas Siggelkow
  * @version 1.0
  */
 public class Cases {
+    /**
+     * Zeigt 3 Möglichkeiten Verzweigungen zu nutzen
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
