@@ -33,9 +33,7 @@ public class Arrays05 {
                 }
                 case 3 -> {
                     System.out.println("Aufgaben");
-                    for (String s : tasks){
-                        System.out.println(s);
-                    }
+                    tasks.forEach(System.out::println);
                 }
                 case 4 -> isRunning = false;
             }

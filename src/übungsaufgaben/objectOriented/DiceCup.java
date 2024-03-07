@@ -1,16 +1,15 @@
 package übungsaufgaben.objectOriented;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class DiceCup {
     public void rollTheDices(ArrayList<Dice> dices){
-        for (Dice d : dices){
-            d.rollTheDice();;
-        }
+        dices.forEach(Dice::rollTheDice);
     }
     public void rollTheDices(Dice[] dices){
         for (Dice d : dices){
-            d.rollTheDice();;
+            Arrays.stream(dices).toList().forEach(Dice::rollTheDice);
         }
     }
 }
