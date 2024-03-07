@@ -21,6 +21,5 @@ public class Dice {
 
     public void rollTheDice() {
         value = new Random().nextInt(1,7);
-        System.out.printf("%d - %d%n",id,value);
     }
 }

@@ -12,4 +12,12 @@ public class DiceCup {
             Arrays.stream(dices).toList().forEach(Dice::rollTheDice);
         }
     }
+
+    public int sumOfDice(ArrayList<Dice> dices) {
+        int result = 0;
+        for (Dice d : dices) {
+            result = d.getValue();
+        }
+        return result;
+    }
 }
