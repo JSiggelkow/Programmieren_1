@@ -6,17 +6,22 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Files {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
 
-        File myFile = new File("ressources/persons.txt");
+        File myFile = new File("ressources/perso");
 
         ArrayList<Person> x = new ArrayList<>();
 
-        Scanner sc = new Scanner(myFile);
+        try {
 
-        while (sc.hasNextLine()){
-            String line = sc.nextLine();
+            Scanner sc = new Scanner(myFile);
 
+            while (sc.hasNextLine()) {
+                String line = sc.nextLine();
+
+            }
+        } catch (FileNotFoundException e ) {
+            System.out.println(e.getMessage());
         }
 
         for (Person p : x) {
